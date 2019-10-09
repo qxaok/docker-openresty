@@ -73,9 +73,6 @@ LABEL resty_add_package_rundeps="${RESTY_ADD_PACKAGE_RUNDEPS}"
 LABEL resty_eval_pre_configure="${RESTY_EVAL_PRE_CONFIGURE}"
 LABEL resty_eval_post_make="${RESTY_EVAL_POST_MAKE}"
 
-# Volume for temporary files
-VOLUME ["/var/run/openresty"]
-
 
 RUN apk add --no-cache --virtual .build-deps \
         build-base \
